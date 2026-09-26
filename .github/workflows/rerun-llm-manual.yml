@@ -8,7 +8,7 @@ on:
         required: true
         type: number
       provider:
-        description: "LLM provider (gemini or openai)"
+        description: "LLM provider (gemini)"
         required: false
         default: "gemini"
       model:
@@ -61,7 +61,6 @@ jobs:
           FETCH_RELATED_FILES: "true"
           LLM_PROVIDER: ${{ inputs.provider }}
           GEMINI_MODEL: ${{ inputs.model }}
-          OPENAI_MODEL: ${{ inputs.model }}
           DEBUG_SMELLS: ${{ inputs.debug_smells }}
           LLM_MAX_FILES_PER_CHUNK: "4"
           LLM_MAX_PATCH_CHARS: "18000"
@@ -69,9 +68,7 @@ jobs:
           MAX_RELATED_FILES_PER_FILE: "2"
           MAX_RELATED_FILE_CHARS: "4000"
 
-          # keys (enable only the provider you use)
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        
         run: |
           set -e
 
