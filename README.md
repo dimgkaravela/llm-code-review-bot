@@ -86,17 +86,16 @@ The local evaluator follows a parallel workflow:
 
 ## Supported Code Smells
 
-  Code Smell            Typical Refactoring Direction
-  --------------------- ---------------------------------------
-  Long Method           Extract Method
-  Long Parameter List   Context-dependent
-  Duplicate Code        Extract Method / Form Template Method
-  Large Class           Extract Class
-  Feature Envy          Move Method / Move Attribute
-  Message Chains        Context-dependent
+| Code Smell | Typical Refactoring Direction |
+|---|---|
+| Long Method | Extract Method |
+| Long Parameter List | Context-dependent |
+| Duplicate Code | Extract Method / Form Template Method |
+| Large Class | Extract Class |
+| Feature Envy | Move Method / Move Attribute |
+| Message Chains | Context-dependent |
 
-The taxonomy is intentionally constrained so that prompt definitions,
-validation rules, and evaluation labels remain consistent.
+The taxonomy is intentionally constrained so that prompt definitions, validation rules, and evaluation labels remain consistent.
 
 ## Structured Output
 
