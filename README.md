@@ -160,7 +160,7 @@ as a universal accuracy measurement.
 ### Selected Results
 
   --------------------------------------------------------------------------
-  Experiment                 Precision             Recall                 F1
+  Experiment        |         Precision    |         Recall    |             F1
   ----------------- ------------------ ------------------ ------------------
   SmellyCode — file             85.71%             63.16%             72.73%
   scope, target                                           
