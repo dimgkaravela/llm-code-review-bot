@@ -8,7 +8,7 @@ on:
         required: true
         type: number
       provider:
-        description: "LLM provider (gemini)"
+        description: "LLM provider (currently supported: gemini)"
         required: false
         default: "gemini"
       model:
@@ -54,6 +54,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_PAT }}
           REPOSITORY: ${{ github.repository }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           PR_NUMBER: ${{ inputs.pr_number }}
           POST_COMMENT: ${{ inputs.post_comment }}
           MAX_FILES: ${{ inputs.max_files }}
