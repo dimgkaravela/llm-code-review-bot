@@ -159,29 +159,14 @@ as a universal accuracy measurement.
 
 ### Selected Results
 
-  --------------------------------------------------------------------------
-  Experiment        |         Precision    |         Recall    |             F1
-  ----------------- ------------------ ------------------ ------------------
-  SmellyCode — file             85.71%             63.16%             72.73%
-  scope, target                                           
-  matching                                                
+| Experiment | Precision | Recall | F1 |
+| --- | ---: | ---: | ---: |
+| SmellyCode — Prompt 1, file scope, target-name matching | 85.7% | 63.2% | 72.7% |
+| SACS — Prompt 1, diff scope, target-name matching | 40.0% | 15.4% | 22.2% |
+| SoftDevl — Prompt 1, file scope, target-name matching | 33.3% | 34.6% | 34.0% |
+| Refactoring cases — diff scope | 30.0% | 32.4% | 31.2% |
 
-  MLCQ — revised                64.10%             83.33%             72.46%
-  prompt, file                                            
-  scope, target                                           
-  matching                                                
-
-  Refactoring                   30.00%             32.43%             31.17%
-  recommendations —                                       
-  revised                                                 
-  target-based                                            
-  result                                                  
-  --------------------------------------------------------------------------
-
-Performance varied across datasets and smell categories. The experiments
-also highlighted challenges involving exact line localization,
-heterogeneous dataset definitions, and refactorings that require broader
-design context.
+Performance varies significantly across datasets, smell categories, scopes, and prompt versions. These results are benchmark-specific and should not be interpreted as a general accuracy guarantee.
 
 ## Tech Stack
 
